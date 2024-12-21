@@ -1,32 +1,32 @@
-# Object-Detection-model
-This is a simple object deetection program written in python which detect common objects in an image.
+# Object Detection with YOLOv5 and Image Cropping
 
-Libraries used : `cv2` `numpy` `cvlib` `PIL` `matplotlib`<br><br>
-`YOLOv3` model is used for this program to detect objects.<br><br>
-`YOLO` is a Real-time object detection model which is extremely fast and accurate<br><br>
-Documentation of YOLO: https://pjreddie.com/darknet/yolo/
+## Overview
+This project demonstrates how to use the YOLOv5 model for object detection in images. The steps involved are:
+1. **Initial Object Detection**: Detect objects in the image and draw bounding boxes around them.
+2. **Image Cropping**: Allow the user to select and crop a specific area of the image.
+3. **Display Results**: Show two images — one cropped and one with bounding boxes drawn on the cropped image.
 
-## How to run this project locally ?
+## Requirements
+Before running the project, you need to set up a Python environment and install the required dependencies.
 
-Install required libraries
+### Step 1: Create and Activate a Virtual Environment
 
-```
-pip install -r requirements.txt
-```
+To ensure the project runs with the correct dependencies, it's recommended to use a virtual environment.
 
-### How to run using jupytor notebook
-Run the cells respectively one after another
+#### On Windows:
 
-### How to run in the terminal
-```
-python objectdetection.py
-```
+```bash
+python -m venv venv
+venv\Scripts\activate
 
-This program is written to read a one image at a time, if you need to play with different images, you are required to pass it to the program.
 
-More on Objetc-Detection with OpenCV can found in below links <br><br>
-https://www.pyimagesearch.com/2018/11/12/yolo-object-detection-with-opencv/ 
+pip install opencv-python ultralytics matplotlib numpy
 
-## Output :
+python object_detection.py
 
-![Predicted image](https://github.com/lihini223/Object-Detection-model/blob/main/img/Object_detection.png)
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgements
+YOLOv5 by Ultralytics.
+OpenCV for image processing.
