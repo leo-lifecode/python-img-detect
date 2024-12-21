@@ -19,14 +19,8 @@ To ensure the project runs with the correct dependencies, it's recommended to us
 python -m venv venv
 venv\Scripts\activate
 
-
 pip install opencv-python ultralytics matplotlib numpy
 
 python object_detection.py
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgements
-YOLOv5 by Ultralytics.
-OpenCV for image processing.
